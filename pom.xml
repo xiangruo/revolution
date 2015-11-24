@@ -62,7 +62,10 @@
 	</properties>
 
 	<dependencyManagement>
+	
+	
 		<dependencies>
+		
 			<!-- redis -->
 			<dependency>
 				<groupId>redis.clients</groupId>
