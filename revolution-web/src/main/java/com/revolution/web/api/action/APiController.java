@@ -24,7 +24,7 @@ public class APiController {
 	private static final Logger logger = LoggerFactory.getLogger(APiController.class);
 
 	/**
-	 * json--->bean
+	 * json--->bean consumes : 指定处理请求的提交内容类型 produces :指定返回的内容类型
 	 * @param body
 	 * @param request
 	 * @return
