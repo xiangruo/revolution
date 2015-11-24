@@ -8,7 +8,9 @@
 	                http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
                     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<!-- 暂时不需要 -->
+
+   <!--  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.h2.Driver" />
         <property name="url" value="jdbc:h2:file:database/h2/octopus;AUTO_SERVER=TRUE"/>
         <property name="username" value="sa"/>
@@ -18,14 +20,14 @@
     <bean id="liquibase" class="liquibase.integration.spring.SpringLiquibase">
         <property name="dataSource" ref="dataSource"/>
         <property name="changeLog" value="liquibase/h2-changelog.xml"/>
-    </bean>
+    </bean> -->
 
     <!--<jdbc:initialize-database data-source="dataSource" ignore-failures="DROPS" >
         <jdbc:script location="classpath:database/h2_schema.sql" />
         <jdbc:script location="classpath:database/h2_test_data.sql" />
     </jdbc:initialize-database>-->
 
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="mapperLocations" value="classpath:sqlmap/user.xml"/>
         <property name="typeAliasesPackage" value="org.autumn.revolution.web.entity" />
@@ -44,6 +46,6 @@
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
           p:dataSource-ref="dataSource" />
 
-    <context:component-scan base-package="org.autumn.revolution.web.dao" />
+    <context:component-scan base-package="org.autumn.revolution.web.dao" />-->
 
 </beans>

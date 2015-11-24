@@ -1,0 +1,9 @@
+.project
+.classpath
+.settings
+target
+*.iml
+.idea
+application.local.properties
+*/src/main/portable/local
+logs
