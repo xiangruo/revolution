@@ -13,7 +13,7 @@ import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
-public class HttpTest {
+public class APiControllerTest {
 
 	@Test
 	public void test1() throws ClientProtocolException, IOException {
@@ -24,7 +24,6 @@ public class HttpTest {
 		StringEntity s = new StringEntity(str, "utf-8");
 		s.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
 		System.out.println(s.getContentLength());
-
 		httpost.setEntity(s);
 		HttpResponse httpResponse = client.execute(httpost);
 		System.out.println(httpResponse.getStatusLine().getStatusCode());
