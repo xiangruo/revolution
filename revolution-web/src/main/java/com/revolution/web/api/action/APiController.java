@@ -36,4 +36,11 @@ public class APiController {
 
 	}
 
+	@RequestMapping(value = "/xml/api", method = RequestMethod.POST, consumes = MediaType.APPLICATION_ATOM_XML_VALUE, produces = MediaType.APPLICATION_ATOM_XML_VALUE)
+	public @ResponseBody ResponseEntity handleXMLRequest(@RequestBody JsonMessageIn body, HttpServletRequest request) {
+		logger.info("APiController handleJSONRequest:{}", body.toString());
+		return new ResponseEntity<>(body, null, HttpStatus.OK);
+
+	}
+
 }
