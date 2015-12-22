@@ -48,6 +48,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+		</dependency>
 		<!-- spring end -->
 		<!-- mybatis -->
 		<dependency>
@@ -73,7 +78,7 @@
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 
-		<!-- test  start-->
+		<!-- test start -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
@@ -87,7 +92,7 @@
 			<groupId>org.jmockit</groupId>
 			<artifactId>jmockit</artifactId>
 		</dependency>
-		
+
 		<!-- test end -->
 
 		<!-- h2 -->
@@ -124,19 +129,24 @@
 			<artifactId>jul-to-slf4j</artifactId>
 		</dependency>
 		<!-- LOG end -->
-		
-		
+
+
 		<!-- http client test -->
-			<dependency>
-				<groupId>commons-httpclient</groupId>
-				<artifactId>commons-httpclient</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.httpcomponents</groupId>
-				<artifactId>httpclient</artifactId>
-			</dependency>
-			
-			<!-- http end -->
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
+		<!-- http end -->
+
+
+
+
+		<!-- java socket -->
 
 	</dependencies>
 
