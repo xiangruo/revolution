@@ -7,18 +7,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.revolution.web.api.bean.JsonMessageIn;
 
 /**
  * @author xiangruo 想做一个解析json和xml的接口
  */
-@Controller
+@RestController
 public class APiController {
 
 	private static final Logger logger = LoggerFactory.getLogger(APiController.class);
@@ -40,6 +40,12 @@ public class APiController {
 	public @ResponseBody ResponseEntity handleXMLRequest(@RequestBody JsonMessageIn body, HttpServletRequest request) {
 		logger.info("APiController handleJSONRequest:{}", body.toString());
 		return new ResponseEntity<>(body, null, HttpStatus.OK);
+
+	}
+
+	@RequestMapping(value = "/exception", method = RequestMethod.GET)
+	public @ResponseBody ResponseEntity handleExceptionRequest() {
+		throw new RuntimeException("this is Error");
 
 	}
 
