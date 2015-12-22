@@ -16,7 +16,7 @@ import com.revolution.web.api.action.APiController;
  * @ControllerAdvice的应用 异常处理 初始化一些数据 以及加入一些新的原始
  */
 @ControllerAdvice(assignableTypes = APiController.class)
-public class ApiExceptionHandlerController {
+public class ApiControllerAdvice {
 
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<String> handleDefaultException(Exception e) {
