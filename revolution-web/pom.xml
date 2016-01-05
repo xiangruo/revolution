@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>revolution</artifactId>
 		<groupId>org.autumn</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -13,6 +13,11 @@
 	<description>常用的web开发模式示例.包括activeMq,rabbitMq,redis,zookeeper等使用(一步步来)</description>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.autumn</groupId>
+			<artifactId>revolution-core</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -150,8 +155,8 @@
 
 	</dependencies>
 
-	
-<build>
+
+	<build>
 		<finalName>revolution-demo</finalName>
 		<plugins>
 			<!-- portable config -->

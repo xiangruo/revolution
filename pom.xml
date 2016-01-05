@@ -6,7 +6,7 @@
 	<groupId>org.autumn</groupId>
 	<artifactId>revolution</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<modules>
 		<module>revolution-core</module>
 		<module>revolution-web</module>
@@ -27,6 +27,7 @@
 	</developers>
 
 	<properties>
+		<revolution.version>1.0.0-SNAPSHOT</revolution.version>
 		<spring.version>4.1.8.RELEASE</spring.version>
 		<mybatis.version>3.2.8</mybatis.version>
 		<mybatis.spring.version>1.2.2</mybatis.spring.version>
@@ -62,10 +63,19 @@
 	</properties>
 
 	<dependencyManagement>
-	
-	
+
+
 		<dependencies>
-		
+
+			<!-- revolution start -->
+			<dependency>
+				<groupId>org.autumn</groupId>
+				<artifactId>revolution-core</artifactId>
+				<version>${revolution.version}</version>
+			</dependency>
+			<!-- revolution end -->
+
+
 			<!-- redis -->
 			<dependency>
 				<groupId>redis.clients</groupId>
@@ -248,8 +258,8 @@
 			</dependency>
 
 			<!-- log end -->
-			
-			
+
+
 			<!-- http client -->
 			<dependency>
 				<groupId>commons-httpclient</groupId>
@@ -261,7 +271,7 @@
 				<artifactId>httpclient</artifactId>
 				<version>4.3.3</version>
 			</dependency>
-			
+
 			<!-- http end -->
 
 
