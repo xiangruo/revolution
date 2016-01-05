@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<portable-config>
+    <config-file path="WEB-INF/classes/application.properties">
+        <replace key="jdbc.url">jdbc:mysql://192.168.0.1:3307/trade?useUnicode=true&amp;characterEncoding=UTF-8</replace>
+        <replace key="jdbc.username">work@TCL</replace>
+        <replace key="jdbc.password">Geeker4DB</replace>
+        <replace key="redis.masterName">aof89</replace>
+        <replace key="redis.pwd">tclonline</replace>
+        <replace key="redis.db">19</replace>
+        <replace key="redis.port">26379</replace>
+        <replace key="sentinel.a">sentinel.redis.a:26379</replace>
+        <replace key="sentinel.b">sentinel.redis.b:26379</replace>
+        <replace key="sentinel.c">sentinel.redis.c:26379</replace>
+    </config-file>
+
+</portable-config>
