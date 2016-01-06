@@ -25,7 +25,6 @@ public class JodaTimeTest {
 	public void test2() {
 		DateTime dt = new DateTime();
 		int month = dt.getMonthOfYear(); // where January is 1 and December is
-											// 12
 		int year = dt.getYear();
 	}
 

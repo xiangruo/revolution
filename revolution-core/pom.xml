@@ -109,12 +109,28 @@
 		</dependency>
 		<!-- dozer end -->
 
+
+	<!-- joda-time start -->
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
 		</dependency>
+		
+		<!-- joda-time end -->
+		<!-- feign start -->
+		<dependency>
+		<groupId>com.netflix.feign</groupId>
+		<artifactId>feign-core</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>com.netflix.feign</groupId>
+		<artifactId>feign-gson</artifactId>
+	</dependency>
+		<!-- feign end -->
 	</dependencies>
 
+
+	
 
 
 

@@ -314,6 +314,18 @@
 			</dependency>
 			<!-- joda-time end -->
 
+			<!-- feign start -->
+			<dependency>
+				<groupId>com.netflix.feign</groupId>
+				<artifactId>feign-core</artifactId>
+				<version>8.7.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.netflix.feign</groupId>
+				<artifactId>feign-gson</artifactId>
+				<version>8.7.0</version>
+			</dependency>
+			<!-- feign end -->
 		</dependencies>
 	</dependencyManagement>
 
