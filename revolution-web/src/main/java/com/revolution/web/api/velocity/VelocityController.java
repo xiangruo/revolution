@@ -12,7 +12,7 @@ public class VelocityController {
 	@RequestMapping(value = "/velocity/hello")
 	public String hello(HttpServletRequest request, ModelMap modelMap) {
 		modelMap.addAttribute("testparam", "velocity");
-		return "index.vm";
+		return "index";
 
 	}
 

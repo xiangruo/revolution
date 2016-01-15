@@ -34,7 +34,7 @@
 
 
 
-	<bean id="velocityConfig"
+	<!--  <bean id="velocityConfig"
 		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
 		<property name="velocityProperties">
 			<props>
@@ -46,6 +46,6 @@
 				<prop key="file.resource.loader.cache">false</prop>
 			</props>
 		</property>
-	</bean>
+	</bean>-->
 
 </beans>
