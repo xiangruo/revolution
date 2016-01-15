@@ -5,6 +5,25 @@
     <title></title>
 </head>
 <body>
-    this is test!!! ${testparam}
+    this is test!!! ${testparam}'
+    
+#set( $this = "Velocity")
+$this is great!
+
+
+#foreach( $name in $list )
+    $name is great!
+#end
+
+#set( $condition = true)
+
+#if ($condition)
+    The condition is true!
+#else
+    The condition is false!
+#end
+    
+    
+    
 </body>
 </html>
