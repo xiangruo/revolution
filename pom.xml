@@ -72,7 +72,7 @@
 			<dependency>
 				<groupId>org.autumn</groupId>
 				<artifactId>revolution-core</artifactId>
-				<version>${revolution.version}</version>
+				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 			<!-- revolution end -->
 
@@ -137,15 +137,8 @@
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
-				<version>1.0.4</version>
+				<version>1.0.9</version>
 			</dependency>
-
-
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
-			</dependency>
-
 
 			<!-- json -->
 			<dependency>
@@ -326,6 +319,22 @@
 				<version>8.7.0</version>
 			</dependency>
 			<!-- feign end -->
+
+			<!-- velocity start -->
+			<dependency>
+				<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity</artifactId>
+				<version>1.7</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity-tools</artifactId>
+				<version>2.0</version>
+			</dependency>
+
+			<!-- velocity end -->
+
 		</dependencies>
 	</dependencyManagement>
 
