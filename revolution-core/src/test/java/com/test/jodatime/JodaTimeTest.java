@@ -56,4 +56,9 @@ public class JodaTimeTest {
 		System.out.println(gregorianJuian.getZone());
 	}
 
+	public static void main(String[] args) {
+
+		byte[] a = { -39 };
+		System.out.println(Integer.toBinaryString(-39));
+	}
 }
