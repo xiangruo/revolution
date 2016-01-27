@@ -1,4 +1,4 @@
-package controller;
+package com.mvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
