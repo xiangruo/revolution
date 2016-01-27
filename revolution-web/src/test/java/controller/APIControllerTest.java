@@ -2,6 +2,7 @@ package controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,7 +38,7 @@ public class APIControllerTest extends AbstractTransactionalJUnit4SpringContextT
 
 		MvcResult result = mockMvc.perform(get("/hello", "hello"))// 执行请求
 				.andReturn(); // 返回MvcResult
-		System.out.println(result.getResponse().getContentAsString());
+		Assert.assertNotNull(result.getResponse().getContentAsString());
 	}
 
 }
