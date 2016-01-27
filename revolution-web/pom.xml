@@ -160,8 +160,14 @@
 
 		<!-- velocity end -->
 
-
-
+		<!-- servlet start -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- servlet end -->
 		<!-- Test -->
 		<dependency>
 			<groupId>org.jmock</groupId>
@@ -179,6 +185,9 @@
 			<artifactId>jmock-legacy</artifactId>
 			<version>2.5.1</version>
 		</dependency>
+
+
+
 
 
 

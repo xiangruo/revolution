@@ -49,4 +49,10 @@ public class APiController {
 
 	}
 
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public @ResponseBody ResponseEntity hello(HttpServletRequest request) {
+		return new ResponseEntity<>("hello spring", null, HttpStatus.OK);
+
+	}
+
 }
