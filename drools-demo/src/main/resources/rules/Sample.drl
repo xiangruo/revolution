@@ -1,6 +1,6 @@
-package os.nut.drools
+package com.drools
  
-import os.nut.drools.Message;
+import com.drools.Message;
  
 rule "Hello World"
     when

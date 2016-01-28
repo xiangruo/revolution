@@ -1,4 +1,4 @@
-package os.nut.drools;
+package com.drools;
 
 import static org.junit.Assert.assertNotNull;
 

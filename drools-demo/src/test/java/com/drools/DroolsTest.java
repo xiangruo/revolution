@@ -1,4 +1,4 @@
-package os.nut.drools;
+package com.drools;
 
 import org.junit.Test;
 import org.kie.api.runtime.KieSession;

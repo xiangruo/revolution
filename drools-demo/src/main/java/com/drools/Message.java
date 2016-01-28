@@ -1,4 +1,4 @@
-package os.nut.drools;
+package com.drools;
 
 public class Message {
 	public static final int HELLO = 0;

@@ -2,7 +2,7 @@
  * Copyright © 2014 Xiong Zhijun, All Rights Reserved.
  * Email : hust.xzj@gmail.com
  */
-package os.nut.drools;
+package com.drools;
 
 import org.junit.Before;
 import org.kie.api.KieServices;
