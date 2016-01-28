@@ -11,6 +11,7 @@
 		<module>revolution-web</module>
 		<module>revolution-j2se-demo</module>
     <module>thrift-demo</module>
+    <module>drools-demo</module>
   </modules>
 
 	<developers>
