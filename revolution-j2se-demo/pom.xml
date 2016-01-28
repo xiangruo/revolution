@@ -62,6 +62,7 @@
 
 
 	<build>
+		<finalName>revolution-j2se-demo</finalName>
 		<plugins>
 			<plugin>
 				<!-- Compiler Plugin to set JDK Compiler Configuration -->
